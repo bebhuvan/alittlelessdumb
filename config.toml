@@ -1,36 +1,44 @@
 base_url = "https://alittlelessdumb.pages.dev"
 title = "Bhuvanesh"
-description = "A Little Less Dumb"
-theme = "anemone"
-compile_sass = true
-generate_feed = true
-build_search_index = true
+description = "A Little Less Dumb - My personal corner of the internet"
+compile_sass = false
+minify_html = true
+generate_feeds = true
+default_language = "en"
 
 taxonomies = [
     {name = "tags", feed = true},
 ]
 
 [markdown]
-highlight_code = true
+render_emoji = true
+external_links_target_blank = true
+smart_punctuation = true
+highlight_code = false
+highlight_theme = "gruvbox-dark"
+
+[slugify]
+paths = "on"
+taxonomies = "on"
+anchors = "on"
+
+[link_checker]
+internal_level = "warn"
 
 [extra]
-# Navigation items
-menu_items = [
-    {name = "blog", url = "/blog"},
-    {name = "about", url = "/about"},
-    {name = "journal", url = "/journal"}
-]
+author = "Bhuvanesh"
+display_author = true
 
-# Status update
-status = { text = "Building my blog with Zola", date = "2023-12-22" }
+favicon = "favicon.ico"
+image = ""
 
-# Your links
-links = [
-    { name = "Email", url = "mailto:your@email.com" },
-    { name = "GitHub", url = "https://github.com/bebhuvan" }
-]
+default_theme = "light"
+list_pages = false
+twitter_card = true
 
-webrings = [
-    { name = "My Bookmark 1", url = "https://example.com" },
-    { name = "My Bookmark 2", url = "https://example.com" }
+header_nav = [
+  { url = "/", name_en = "/home/" },
+  { url = "/about", name_en = "/about/" },
+  { url = "/journal", name_en = "/journal/" },
+  { url = "/blog", name_en = "/blog/" }
 ]
