@@ -2,4 +2,4 @@
 title = "Home"
 +++
 
-Welcome to my blog! This is where I share my thoughts and learnings.
+Hi, I'm Bhuvanesh. Welcome to my digital garden!

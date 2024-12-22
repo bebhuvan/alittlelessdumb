@@ -1,33 +1,36 @@
 base_url = "https://alittlelessdumb.pages.dev"
-title = "Your Name"
+title = "Bhuvanesh"
+description = "A Little Less Dumb"
 theme = "anemone"
 compile_sass = true
-build_search_index = true
 generate_feed = true
+build_search_index = true
+
+taxonomies = [
+    {name = "tags", feed = true},
+]
 
 [markdown]
 highlight_code = true
 
 [extra]
-# Your personal info
-author = "Your Name"
-avatar = "/img/avatar.png"  # We'll add this later
-footer_text = "Built with Zola using anemone theme"
-
-# Navigation
-list_pages = true
-
-# Social links - customize with your usernames/links
-links = [
-    { name = "Email", url = "mailto:your-email@example.com", icon = "email" },
-    { name = "GitHub", url = "https://github.com/yourusername", icon = "github" }
+# Navigation items
+menu_items = [
+    {name = "blog", url = "/blog"},
+    {name = "about", url = "/about"},
+    {name = "journal", url = "/journal"}
 ]
 
-# Status updates
-status = { text = "Working on my blog", date = "2023-12-22" }
+# Status update
+status = { text = "Building my blog with Zola", date = "2023-12-22" }
 
-# Additional sections (like the theme demo has)
-webring = [
-    { name = "My Link 1", url = "https://example1.com" },
-    { name = "My Link 2", url = "https://example2.com" }
+# Your links
+links = [
+    { name = "Email", url = "mailto:your@email.com" },
+    { name = "GitHub", url = "https://github.com/bebhuvan" }
+]
+
+webrings = [
+    { name = "My Bookmark 1", url = "https://example.com" },
+    { name = "My Bookmark 2", url = "https://example.com" }
 ]
