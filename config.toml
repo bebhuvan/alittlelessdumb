@@ -1,0 +1,11 @@
+base_url = "https://alittlelessdumb.pages.dev"
+title = "A Little Less Dumb"
+theme = "anemone"
+
+# These were your choices during setup
+compile_sass = true
+highlight_code = true
+build_search_index = true
+
+[markdown]
+highlight_code = true
