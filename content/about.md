@@ -1,6 +1,6 @@
 +++
 title = "About"
+path = "about"
 +++
-This is an about page, nothing more nothing less `forget about it`.
 
-{{ youtube(id="pS6zJ7IsJkM" class="center") }}
+Hi, I'm Bhuvanesh! This is my personal corner of the internet where I share my thoughts and learnings.
