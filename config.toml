@@ -1,11 +1,20 @@
+# Basic site config
 base_url = "https://alittlelessdumb.pages.dev"
 title = "A Little Less Dumb"
 theme = "anemone"
 
-# These were your choices during setup
+# Theme requirements
 compile_sass = true
-highlight_code = true
 build_search_index = true
+generate_feed = true
 
+# Syntax highlighting
 [markdown]
 highlight_code = true
+
+# Theme customization
+[extra]
+# Display a list of posts on the homepage
+list_pages = true
+# You can customize this later
+twitter_card = false
