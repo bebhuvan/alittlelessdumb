@@ -1,20 +1,33 @@
-# Basic site config
 base_url = "https://alittlelessdumb.pages.dev"
-title = "A Little Less Dumb"
+title = "Your Name"
 theme = "anemone"
-
-# Theme requirements
 compile_sass = true
 build_search_index = true
 generate_feed = true
 
-# Syntax highlighting
 [markdown]
 highlight_code = true
 
-# Theme customization
 [extra]
-# Display a list of posts on the homepage
+# Your personal info
+author = "Your Name"
+avatar = "/img/avatar.png"  # We'll add this later
+footer_text = "Built with Zola using anemone theme"
+
+# Navigation
 list_pages = true
-# You can customize this later
-twitter_card = false
+
+# Social links - customize with your usernames/links
+links = [
+    { name = "Email", url = "mailto:your-email@example.com", icon = "email" },
+    { name = "GitHub", url = "https://github.com/yourusername", icon = "github" }
+]
+
+# Status updates
+status = { text = "Working on my blog", date = "2023-12-22" }
+
+# Additional sections (like the theme demo has)
+webring = [
+    { name = "My Link 1", url = "https://example1.com" },
+    { name = "My Link 2", url = "https://example2.com" }
+]
