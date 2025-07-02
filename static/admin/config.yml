@@ -5,9 +5,9 @@ backend:
   name: github
   repo: bebhuvan/alittlelessdumb
   branch: main
-  # Use external authentication service
+  # Custom OAuth via Cloudflare Functions
   base_url: https://api.github.com
-  auth_endpoint: https://decap-oauth-github.vercel.app/api/auth
+  auth_endpoint: auth
 
 # Media files configuration
 media_folder: "content/static"
