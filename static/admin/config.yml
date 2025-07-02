@@ -5,8 +5,8 @@ backend:
   name: github
   repo: bebhuvan/alittlelessdumb
   branch: main
-  # Custom OAuth via Cloudflare Functions
-  base_url: https://api.github.com
+  # OAuth proxy configuration for Cloudflare Pages
+  base_url: https://alittlelessdumb.pages.dev
   auth_endpoint: auth
 
 # Media files configuration
