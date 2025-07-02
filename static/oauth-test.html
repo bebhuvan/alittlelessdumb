@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OAuth Test</title>
+</head>
+<body>
+    <h1>OAuth Message Test</h1>
+    <button onclick="testAuth()">Test OAuth Popup</button>
+    <div id="messages"></div>
+    
+    <script>
+        // Listen for messages from OAuth popup
+        window.addEventListener('message', (event) => {
+            console.log('Received message:', event);
+            const messageDiv = document.createElement('div');
+            messageDiv.innerHTML = '<strong>Message received:</strong><br>' + 
+                                 'Origin: ' + event.origin + '<br>' +
+                                 'Data: ' + JSON.stringify(event.data);
+            document.getElementById('messages').appendChild(messageDiv);
+        });
+        
+        function testAuth() {
+            const popup = window.open('/auth', 'oauth', 'width=600,height=600');
+            console.log('Opened popup:', popup);
+        }
+    </script>
+</body>
+</html>

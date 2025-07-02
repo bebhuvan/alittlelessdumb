@@ -62,9 +62,16 @@ export async function onRequest(context) {
               console.log('Sending message:', message);
               
               if (window.opener) {
-                window.opener.postMessage(message, '*');
+                // Send to specific origin for security
+                window.opener.postMessage(message, 'https://alittlelessdumb.pages.dev');
+                // Also try with wildcard as fallback
+                setTimeout(() => {
+                  window.opener.postMessage(message, '*');
+                  console.log('Sent with wildcard origin');
+                }, 500);
+                
                 document.getElementById('status').textContent = 'Token sent! Closing window...';
-                setTimeout(() => window.close(), 2000);
+                setTimeout(() => window.close(), 3000);
               } else {
                 window.parent.postMessage(message, '*');
                 document.getElementById('status').textContent = 'Token sent via parent!';
