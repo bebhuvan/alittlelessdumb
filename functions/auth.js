@@ -5,6 +5,16 @@ export async function onRequest(context) {
   const { request, env } = context;
   const url = new URL(request.url);
   
+  // Get OAuth credentials with fallback
+  const clientId = env.OAUTH_GITHUB_CLIENT_ID || 'Ov23liglk1k3Y2EU3fDC';
+  const clientSecret = env.OAUTH_GITHUB_CLIENT_SECRET;
+  
+  // Debug: Check if env vars are available
+  console.log('OAuth Config:', {
+    client_id: clientId ? 'SET' : 'UNDEFINED',
+    client_secret: clientSecret ? 'SET' : 'UNDEFINED'
+  });
+  
   // Handle callback from GitHub OAuth
   if (url.searchParams.has('code')) {
     const code = url.searchParams.get('code');
@@ -18,8 +28,8 @@ export async function onRequest(context) {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        client_id: env.OAUTH_GITHUB_CLIENT_ID,
-        client_secret: env.OAUTH_GITHUB_CLIENT_SECRET,
+        client_id: clientId,
+        client_secret: clientSecret,
         code: code,
       }),
     });
@@ -67,7 +77,7 @@ export async function onRequest(context) {
   // Initial auth request - redirect to GitHub
   const state = Math.random().toString(36).substring(7);
   const redirectUri = `${url.origin}/auth`;
-  const githubAuthUrl = `https://github.com/login/oauth/authorize?client_id=${env.OAUTH_GITHUB_CLIENT_ID}&scope=repo&state=${state}&redirect_uri=${encodeURIComponent(redirectUri)}`;
+  const githubAuthUrl = `https://github.com/login/oauth/authorize?client_id=${clientId}&scope=repo&state=${state}&redirect_uri=${encodeURIComponent(redirectUri)}`;
   
   return Response.redirect(githubAuthUrl);
 }
