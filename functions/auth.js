@@ -51,41 +51,34 @@ export async function onRequest(context) {
             console.log('Token received:', '${tokenData.access_token}');
             console.log('Window opener:', window.opener ? 'Available' : 'Not available');
             
-            // Give some time before sending message
-            setTimeout(() => {
-              // Try multiple message formats that Decap CMS might expect
-              const messages = [
-                {
-                  type: 'authorization_grant',
-                  provider: 'github',
-                  token: '${tokenData.access_token}'
-                },
-                {
-                  type: 'authorizing:github:success',
-                  token: '${tokenData.access_token}',
-                  provider: 'github'
-                },
-                'authorization:github:success:${tokenData.access_token}'
-              ];
+            // Send token immediately - based on GitHub issue #770 solution
+            const authData = {
+              token: '${tokenData.access_token}',
+              provider: 'github'
+            };
+            
+            console.log('Auth data:', authData);
+            console.log('Window opener:', window.opener);
+            console.log('Window origin:', window.location.origin);
+            
+            if (window.opener) {
+              // Send the token in the format Decap CMS expects
+              window.opener.postMessage(
+                'authorization:github:success:' + authData.token,
+                'https://alittlelessdumb.pages.dev'
+              );
               
-              console.log('Sending multiple message formats:', messages);
+              console.log('Token sent to CMS');
+              document.getElementById('status').textContent = 'Authorization complete! Closing...';
               
-              if (window.opener) {
-                // Send all message formats
-                messages.forEach((msg, index) => {
-                  setTimeout(() => {
-                    window.opener.postMessage(msg, '*');
-                    console.log('Sent message format', index + 1, ':', msg);
-                  }, index * 200);
-                });
-                
-                document.getElementById('status').textContent = 'Multiple token formats sent! Closing window...';
-                setTimeout(() => window.close(), 4000);
-              } else {
-                messages.forEach(msg => window.parent.postMessage(msg, '*'));
-                document.getElementById('status').textContent = 'Token sent via parent!';
-              }
-            }, 1000);
+              // Close after a short delay
+              setTimeout(() => {
+                window.close();
+              }, 1500);
+            } else {
+              document.getElementById('status').textContent = 'No opener window found!';
+              console.error('No window.opener available');
+            }
           </script>
         </body>
         </html>
