@@ -1,13 +1,9 @@
 # ===== CLOUDFLARE PAGES + DECAP CMS CONFIGURATION =====
-# External authentication for GitHub integration
+# Using git-gateway for reliable authentication
 
 backend:
-  name: github
-  repo: bebhuvan/alittlelessdumb
+  name: git-gateway
   branch: main
-  # OAuth proxy configuration for Cloudflare Pages
-  base_url: https://alittlelessdumb.pages.dev
-  auth_endpoint: auth
 
 # Media files configuration
 media_folder: "content/static"
