@@ -45,25 +45,32 @@ export async function onRequest(context) {
           <title>Authorization Complete</title>
         </head>
         <body>
+          <h2>Authorization Successful!</h2>
+          <p id="status">Sending token to CMS...</p>
           <script>
-            // Send token to parent window (Decap CMS)
-            if (window.opener) {
-              window.opener.postMessage({
+            console.log('Token received:', '${tokenData.access_token}');
+            console.log('Window opener:', window.opener ? 'Available' : 'Not available');
+            
+            // Give some time before sending message
+            setTimeout(() => {
+              const message = {
                 type: 'authorization_grant',
                 provider: 'github',
                 token: '${tokenData.access_token}'
-              }, '*');
-              window.close();
-            } else {
-              // Fallback if no opener
-              window.parent.postMessage({
-                type: 'authorization_grant', 
-                provider: 'github',
-                token: '${tokenData.access_token}'
-              }, '*');
-            }
+              };
+              
+              console.log('Sending message:', message);
+              
+              if (window.opener) {
+                window.opener.postMessage(message, '*');
+                document.getElementById('status').textContent = 'Token sent! Closing window...';
+                setTimeout(() => window.close(), 2000);
+              } else {
+                window.parent.postMessage(message, '*');
+                document.getElementById('status').textContent = 'Token sent via parent!';
+              }
+            }, 1000);
           </script>
-          <p>Authorization successful! Redirecting...</p>
         </body>
         </html>
       `, {
