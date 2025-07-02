@@ -6,8 +6,8 @@ backend:
   repo: bebhuvan/alittlelessdumb
   branch: main
   # Use external authentication service
-  auth_type: implicit
-  app_id: Ov23liglk1k3Y2EU3fDC
+  base_url: https://api.github.com
+  auth_endpoint: https://decap-oauth-github.vercel.app/api/auth
 
 # Media files configuration
 media_folder: "content/static"
