@@ -53,27 +53,36 @@ export async function onRequest(context) {
             
             // Give some time before sending message
             setTimeout(() => {
-              const message = {
-                type: 'authorization_grant',
-                provider: 'github',
-                token: '${tokenData.access_token}'
-              };
+              // Try multiple message formats that Decap CMS might expect
+              const messages = [
+                {
+                  type: 'authorization_grant',
+                  provider: 'github',
+                  token: '${tokenData.access_token}'
+                },
+                {
+                  type: 'authorizing:github:success',
+                  token: '${tokenData.access_token}',
+                  provider: 'github'
+                },
+                'authorization:github:success:${tokenData.access_token}'
+              ];
               
-              console.log('Sending message:', message);
+              console.log('Sending multiple message formats:', messages);
               
               if (window.opener) {
-                // Send to specific origin for security
-                window.opener.postMessage(message, 'https://alittlelessdumb.pages.dev');
-                // Also try with wildcard as fallback
-                setTimeout(() => {
-                  window.opener.postMessage(message, '*');
-                  console.log('Sent with wildcard origin');
-                }, 500);
+                // Send all message formats
+                messages.forEach((msg, index) => {
+                  setTimeout(() => {
+                    window.opener.postMessage(msg, '*');
+                    console.log('Sent message format', index + 1, ':', msg);
+                  }, index * 200);
+                });
                 
-                document.getElementById('status').textContent = 'Token sent! Closing window...';
-                setTimeout(() => window.close(), 3000);
+                document.getElementById('status').textContent = 'Multiple token formats sent! Closing window...';
+                setTimeout(() => window.close(), 4000);
               } else {
-                window.parent.postMessage(message, '*');
+                messages.forEach(msg => window.parent.postMessage(msg, '*'));
                 document.getElementById('status').textContent = 'Token sent via parent!';
               }
             }, 1000);
