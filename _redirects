@@ -1,4 +1,7 @@
 # Admin routes - serve directly without SPA routing
+# OAuth redirects for Decap CMS on Cloudflare Pages
+/api/auth https://github.com/login/oauth/authorize 302
+/auth/* https://github.com/login/oauth/authorize 302
 /admin    /admin/index.html   200
 /admin/   /admin/index.html   200
 /admin/*  /admin/:splat       200

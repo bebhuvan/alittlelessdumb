@@ -1,10 +1,13 @@
-# ===== PRODUCTION CONFIGURATION FOR GITHUB/CLOUDFLARE =====
-# Copy this to config.yml when deploying to production
+# ===== CLOUDFLARE PAGES + DECAP CMS CONFIGURATION =====
+# External authentication for GitHub integration
 
 backend:
   name: github
-  repo: bebhuvan/alittlelessdumb  # Your actual GitHub repo
+  repo: bebhuvan/alittlelessdumb
   branch: main
+  # Use external authentication service
+  auth_type: implicit
+  app_id: Ov23liglk1k3Y2EU3fDC
 
 # Media files configuration
 media_folder: "content/static"
