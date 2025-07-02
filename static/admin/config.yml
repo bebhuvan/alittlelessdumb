@@ -1,5 +1,5 @@
 # ===== CLOUDFLARE PAGES + DECAP CMS CONFIGURATION =====
-# Using git-gateway for reliable authentication
+# Using git-gateway with Auth0 for authentication
 
 backend:
   name: git-gateway

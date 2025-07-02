@@ -37,48 +37,22 @@ export async function onRequest(context) {
     const tokenData = await tokenResponse.json();
     
     if (tokenData.access_token) {
-      // Send token back to Decap CMS via postMessage
+      // Redirect back to admin with token in URL hash (no postMessage)
+      const redirectUrl = `https://alittlelessdumb.pages.dev/admin/#access_token=${tokenData.access_token}&token_type=bearer&provider=github`;
+      
       return new Response(`
         <!DOCTYPE html>
         <html>
         <head>
           <title>Authorization Complete</title>
+          <meta http-equiv="refresh" content="0; url=${redirectUrl.replace(/&/g, '&amp;')}">
         </head>
         <body>
           <h2>Authorization Successful!</h2>
-          <p id="status">Sending token to CMS...</p>
+          <p>Redirecting back to CMS...</p>
           <script>
-            console.log('Token received:', '${tokenData.access_token}');
-            console.log('Window opener:', window.opener ? 'Available' : 'Not available');
-            
-            // Send token immediately - based on GitHub issue #770 solution
-            const authData = {
-              token: '${tokenData.access_token}',
-              provider: 'github'
-            };
-            
-            console.log('Auth data:', authData);
-            console.log('Window opener:', window.opener);
-            console.log('Window origin:', window.location.origin);
-            
-            if (window.opener) {
-              // Send the token in the format Decap CMS expects
-              window.opener.postMessage(
-                'authorization:github:success:' + authData.token,
-                'https://alittlelessdumb.pages.dev'
-              );
-              
-              console.log('Token sent to CMS');
-              document.getElementById('status').textContent = 'Authorization complete! Closing...';
-              
-              // Close after a short delay
-              setTimeout(() => {
-                window.close();
-              }, 1500);
-            } else {
-              document.getElementById('status').textContent = 'No opener window found!';
-              console.error('No window.opener available');
-            }
+            // Immediate redirect as backup
+            window.location.href = '${redirectUrl}';
           </script>
         </body>
         </html>
