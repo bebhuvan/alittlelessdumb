@@ -1,0 +1,7 @@
+# Admin routes - serve directly without SPA routing
+/admin    /admin/index.html   200
+/admin/   /admin/index.html   200
+/admin/*  /admin/:splat       200
+
+# Handle SPA routing for everything else - redirect 404s to index for client-side routing  
+/*    /index.html   200

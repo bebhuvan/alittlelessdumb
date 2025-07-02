@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Local Decap CMS Test</title>
+  <style>
+    body { margin: 0; padding: 0; }
+    .debug { 
+      position: fixed; 
+      top: 0; 
+      right: 0; 
+      background: rgba(0,0,0,0.8); 
+      color: white; 
+      padding: 10px; 
+      font-size: 12px;
+      max-width: 300px;
+      z-index: 9999;
+    }
+  </style>
+</head>
+<body>
+  <div class="debug" id="debug">Loading local package...</div>
+  <div id="nc-root"></div>
+  
+  <script>
+    const debug = document.getElementById('debug');
+    
+    function log(msg) {
+      console.log(msg);
+      debug.innerHTML = `${msg}<br>Time: ${new Date().toLocaleTimeString()}`;
+    }
+    
+    log('Loading local Decap CMS package...');
+    
+    // Try loading from the local node_modules
+    const script = document.createElement('script');
+    script.src = '/node_modules/decap-cms-app/dist/decap-cms-app.js';
+    
+    script.onload = function() {
+      log('Local package loaded!');
+      
+      setTimeout(() => {
+        log(`CMS: ${!!window.CMS}, DecapCMS: ${!!window.DecapCMS}`);
+        
+        if (window.CMS) {
+          log('Initializing from local package...');
+          try {
+            window.CMS.init({
+              config: {
+                backend: {
+                  name: 'test-repo'
+                },
+                media_folder: 'uploads',
+                public_folder: '/uploads',
+                collections: [{
+                  name: 'posts',
+                  label: 'Posts',
+                  folder: 'posts',
+                  create: true,
+                  fields: [
+                    { name: 'title', label: 'Title', widget: 'string' },
+                    { name: 'body', label: 'Body', widget: 'markdown' }
+                  ]
+                }]
+              }
+            });
+            log('✅ Local CMS initialized!');
+          } catch (error) {
+            log(`❌ Init error: ${error.message}`);
+          }
+        } else {
+          log('❌ CMS not available in local package');
+        }
+      }, 500);
+    };
+    
+    script.onerror = function() {
+      log('❌ Local package failed, trying CDN fallback...');
+      
+      const fallback = document.createElement('script');
+      fallback.src = 'https://unpkg.com/decap-cms@3.2.0/dist/decap-cms.js';
+      fallback.onload = () => log('✅ CDN fallback loaded');
+      fallback.onerror = () => log('❌ CDN fallback also failed');
+      document.head.appendChild(fallback);
+    };
+    
+    document.head.appendChild(script);
+  </script>
+</body>
+</html>

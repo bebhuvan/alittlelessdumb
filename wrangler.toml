@@ -1,0 +1,15 @@
+# Cloudflare Pages configuration
+name = "alittlelessdumb"
+compatibility_date = "2024-12-01"
+
+[build]
+command = "pnpm quartz build"
+publish = "public"
+
+[build.environment_variables]
+NODE_VERSION = "22"
+PNPM_VERSION = "latest"
+
+# Custom build settings for Cloudflare Pages
+[[pages_build_output_dir]]
+value = "public"

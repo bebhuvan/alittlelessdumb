@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>CMS</title>
+    <!-- Decap CMS script includes its own stylesheet -->
+    <script src="https://unpkg.com/decap-cms@^3/dist/decap-cms.js"></script>
+  </head>
+  <body>
+    <script>
+      // Point Decap CMS to the config file we already created under /static/admin/
+      window.CMS_MANUAL_INIT = true;
+      window.addEventListener("load", () => {
+        // @ts-ignore
+        CMS.init({ config: "/static/admin/config.yml" });
+      });
+    </script>
+    <noscript>You need JavaScript enabled to run Decap CMS.</noscript>
+  </body>
+</html>
