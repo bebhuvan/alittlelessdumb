@@ -30,6 +30,40 @@ content:
         label: Content
         type: markdown
         required: true
+        options:
+          editor_components: []
+          modes: [rich_text, raw]
+
+  - name: link-litter
+    label: Link Litter
+    type: collection
+    path: content/link-litter
+    view:
+      fields: [title, date]
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: date
+        label: Date
+        type: datetime
+        required: true
+      - name: tags
+        label: Tags
+        type: list
+        item: string
+      - name: draft
+        label: Draft
+        type: boolean
+        default: false
+      - name: body
+        label: Content
+        type: markdown
+        required: true
+        options:
+          editor_components: []
+          modes: [rich_text, raw]
 
 settings:
   title: Digital Garden CMS
