@@ -15,10 +15,10 @@ Quartz v4 features a from-the-ground rewrite focusing on end-user extensibility 
 | Area | Status |
 |------|--------|
 | Site theming | ✅ Orange light/dark palettes, **Inter** header font, favicon, cleaned footer links |
-| Content | ✅ Home page, 3 content categories (`link-litter`, `mini-musings`, `tiny-sparks`) with placeholder index files |
-| CMS | ⚠️ Decap CMS partially configured; local backend proxy works but the UI is still blank due to conflicts with Quartz’s SPA script. Not used in production yet |
-| Editor flow | ✅ You can treat the `content/` folder as an Obsidian vault and write notes there; Quartz renders them |
-| Deployment | 🔜 Cloudflare Pages once CMS or pure git workflow is finalised |
+| Content | ✅ Home page, 5 content categories with fun names (`gaggle-of-links`, `brain-dumps`, `stolen-wisdom`, `someday-stack`, `proper-posts`) |
+| CMS | ✅ Pages CMS integrated with GitHub and Cloudflare Pages for browser-based editing |
+| Editor flow | ✅ Both Pages CMS browser editing and local Obsidian/markdown editing supported |
+| Deployment | ✅ Cloudflare Pages with clean builds, no warnings |
 
 
 

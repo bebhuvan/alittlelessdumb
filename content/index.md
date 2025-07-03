@@ -1,5 +1,5 @@
 ---
-title: Welcome
+title: "Welcome to A Little Less Dumb"
 date: 2025-07-03
 ---
 
