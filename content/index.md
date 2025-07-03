@@ -1,5 +1,6 @@
 ---
 title: Welcome
+date: 2025-07-03
 ---
 
 Hi, I'm **Bhuvan**—welcome to my digital brain spillage. This chaotic corner of the internet serves as my external memory, where I dump interesting links, half-formed thoughts, stolen wisdom from things I consume, and the occasional attempt at coherent writing.

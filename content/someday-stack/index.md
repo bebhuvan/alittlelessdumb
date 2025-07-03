@@ -1,5 +1,6 @@
 ---
 title: "Someday Stack"
+date: 2025-07-03
 ---
 
 # 📚 Someday Stack

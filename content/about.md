@@ -1,5 +1,6 @@
 ---
 title: About
+date: 2025-07-03
 ---
 
 Hi, my name is **Bhuvan**—welcome to my garden of tentative thoughts. This small place on the internet helps me share

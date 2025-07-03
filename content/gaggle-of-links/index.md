@@ -1,5 +1,6 @@
 ---
 title: "Gaggle of Links"
+date: 2025-07-03
 ---
 
 # 📎 Gaggle of Links

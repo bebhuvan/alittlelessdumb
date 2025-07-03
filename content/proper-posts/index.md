@@ -1,5 +1,6 @@
 ---
 title: "Proper Posts"
+date: 2025-07-03
 ---
 
 # ✍️ Proper Posts
