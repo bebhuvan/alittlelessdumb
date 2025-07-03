@@ -66,7 +66,13 @@ content:
       - name: mood
         label: Mood/Context
         type: select
-        options: ["curious", "frustrated", "excited", "contemplative", "random", "nostalgic"]
+        options:
+          - { label: "Curious", value: "curious" }
+          - { label: "Frustrated", value: "frustrated" }
+          - { label: "Excited", value: "excited" }
+          - { label: "Contemplative", value: "contemplative" }
+          - { label: "Random", value: "random" }
+          - { label: "Nostalgic", value: "nostalgic" }
         hint: What headspace are you in?
       - name: date
         label: Date
@@ -117,7 +123,14 @@ content:
       - name: source_type
         label: Content Type
         type: select
-        options: ["book", "article", "video", "podcast", "documentary", "course", "conversation"]
+        options:
+          - { label: "Book", value: "book" }
+          - { label: "Article", value: "article" }
+          - { label: "Video", value: "video" }
+          - { label: "Podcast", value: "podcast" }
+          - { label: "Documentary", value: "documentary" }
+          - { label: "Course", value: "course" }
+          - { label: "Conversation", value: "conversation" }
         required: true
       - name: source_url
         label: Source Link
@@ -135,7 +148,12 @@ content:
       - name: rating
         label: Your Rating
         type: select
-        options: ["⭐", "⭐⭐", "⭐⭐⭐", "⭐⭐⭐⭐", "⭐⭐⭐⭐⭐"]
+        options:
+          - { label: "⭐ (1 star)", value: "⭐" }
+          - { label: "⭐⭐ (2 stars)", value: "⭐⭐" }
+          - { label: "⭐⭐⭐ (3 stars)", value: "⭐⭐⭐" }
+          - { label: "⭐⭐⭐⭐ (4 stars)", value: "⭐⭐⭐⭐" }
+          - { label: "⭐⭐⭐⭐⭐ (5 stars)", value: "⭐⭐⭐⭐⭐" }
         hint: How much did you enjoy/learn from this?
       - name: body
         label: Key takeaways & thoughts
@@ -172,13 +190,20 @@ content:
       - name: status
         label: Status
         type: select
-        options: ["to-read", "reading", "read", "archived"]
+        options:
+          - { label: "To Read", value: "to-read" }
+          - { label: "Currently Reading", value: "reading" }
+          - { label: "Read", value: "read" }
+          - { label: "Archived", value: "archived" }
         default: "to-read"
         required: true
       - name: priority
         label: Priority
         type: select
-        options: ["low", "medium", "high"]
+        options:
+          - { label: "Low", value: "low" }
+          - { label: "Medium", value: "medium" }
+          - { label: "High", value: "high" }
         default: "medium"
       - name: estimated_time
         label: Est. Reading Time
@@ -234,7 +259,10 @@ content:
       - name: status
         label: Status
         type: select
-        options: ["draft", "published", "archived"]
+        options:
+          - { label: "Draft", value: "draft" }
+          - { label: "Published", value: "published" }
+          - { label: "Archived", value: "archived" }
         default: "draft"
         required: true
       - name: tags
