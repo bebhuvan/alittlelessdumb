@@ -1,17 +1,17 @@
-# ===== CLOUDFLARE PAGES + DECAP CMS CONFIGURATION =====
-# Using git-gateway with Auth0 for authentication
+# ===== NETLIFY + DECAP CMS CONFIGURATION =====
+# Simple Git Gateway setup - no custom OAuth needed
 
 backend:
   name: git-gateway
   branch: main
 
-# Media files configuration
+# Media files configuration  
 media_folder: "content/static"
 public_folder: "/static"
 
-# Site configuration - UPDATE THESE URLs
-site_url: https://alittlelessdumb.pages.dev  # Your Cloudflare Pages URL
-display_url: https://alittlelessdumb.pages.dev
+# Site URL will be updated after Netlify deployment
+site_url: https://your-site-name.netlify.app
+display_url: https://your-site-name.netlify.app
 
 # Editor configuration
 editor:

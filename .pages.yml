@@ -3,24 +3,29 @@ media:
   input: content/static
   output: /static
 
-# Content collections
+# Content collections - organized for stream of consciousness and link-blogging
 content:
-  # Main blog posts
-  - name: posts
-    label: Blog Posts
+  # 📎 Gaggle of Links - Interesting stuff you stumble upon on the internet
+  - name: gaggle-of-links
+    label: 📎 Gaggle of Links
     type: collection
-    path: content/posts
+    path: content/gaggle-of-links
     view: 
-      fields: [title, date]
+      fields: [title, date, url]
     fields:
       - name: title
         label: Title
         type: string
         required: true
-      - name: description
-        label: Description
-        type: text
-        hint: Brief description for SEO and previews
+        hint: What caught your attention?
+      - name: url
+        label: Link URL
+        type: string
+        hint: The link you're saving (optional for non-link posts)
+      - name: source
+        label: Source
+        type: string
+        hint: Where you found this (Twitter, HN, Reddit, etc.)
       - name: date
         label: Date
         type: date
@@ -29,26 +34,27 @@ content:
         label: Tags
         type: list
         item: string
-        hint: Add relevant tags for categorization
-      - name: draft
-        label: Draft
+        hint: Topics, themes, or keywords
+      - name: archive
+        label: Archive this
         type: boolean
         default: false
-        hint: Set to true to hide from publication
+        hint: Mark as archived to hide from main feed
       - name: body
-        label: Content
+        label: Your thoughts
         type: rich-text
         required: true
+        hint: Why is this interesting? What does it make you think?
         options:
           media: default
           path: static
           extensions: [jpg, jpeg, png, gif, webp]
 
-  # Link Litter collection
-  - name: link-litter
-    label: Link Litter
+  # 💭 Brain Dumps - Stream of consciousness, fleeting observations
+  - name: brain-dumps
+    label: 💭 Brain Dumps
     type: collection
-    path: content/link-litter
+    path: content/brain-dumps
     view:
       fields: [title, date]
     fields:
@@ -56,10 +62,12 @@ content:
         label: Title
         type: string
         required: true
-      - name: description
-        label: Description
-        type: text
-        hint: Brief description for SEO and previews
+        hint: What's on your mind?
+      - name: mood
+        label: Mood/Context
+        type: select
+        options: ["curious", "frustrated", "excited", "contemplative", "random", "nostalgic"]
+        hint: What headspace are you in?
       - name: date
         label: Date
         type: date
@@ -68,37 +76,53 @@ content:
         label: Tags
         type: list
         item: string
-        hint: Add relevant tags for categorization
+        hint: Themes or topics
       - name: draft
-        label: Draft
+        label: Keep private
         type: boolean
         default: false
-        hint: Set to true to hide from publication
+        hint: Sometimes thoughts need to marinate
       - name: body
-        label: Content
+        label: Stream of consciousness
         type: rich-text
         required: true
+        hint: Let it flow...
         options:
           media: default
           path: static
           extensions: [jpg, jpeg, png, gif, webp]
 
-  # Mini Musings collection
-  - name: mini-musings
-    label: Mini Musings
+  # 📝 Stolen Wisdom - Insights pilfered from things you consume
+  - name: stolen-wisdom
+    label: 📝 Stolen Wisdom
     type: collection
-    path: content/mini-musings
+    path: content/stolen-wisdom
     view:
-      fields: [title, date]
+      fields: [title, date, source_type]
     fields:
       - name: title
         label: Title
         type: string
         required: true
-      - name: description
-        label: Description
-        type: text
-        hint: Brief description for SEO and previews
+        hint: What did you learn?
+      - name: source_title
+        label: Source Title
+        type: string
+        required: true
+        hint: Book/article/video/podcast title
+      - name: source_author
+        label: Author/Creator
+        type: string
+        hint: Who created this?
+      - name: source_type
+        label: Content Type
+        type: select
+        options: ["book", "article", "video", "podcast", "documentary", "course", "conversation"]
+        required: true
+      - name: source_url
+        label: Source Link
+        type: string
+        hint: Link to the original content
       - name: date
         label: Date
         type: date
@@ -107,53 +131,124 @@ content:
         label: Tags
         type: list
         item: string
-        hint: Add relevant tags for categorization
-      - name: draft
-        label: Draft
-        type: boolean
-        default: false
-        hint: Set to true to hide from publication
+        hint: Key concepts or themes
+      - name: rating
+        label: Your Rating
+        type: select
+        options: ["⭐", "⭐⭐", "⭐⭐⭐", "⭐⭐⭐⭐", "⭐⭐⭐⭐⭐"]
+        hint: How much did you enjoy/learn from this?
       - name: body
-        label: Content
+        label: Key takeaways & thoughts
         type: rich-text
         required: true
+        hint: What resonated? What will you remember?
         options:
           media: default
           path: static
           extensions: [jpg, jpeg, png, gif, webp]
 
-  # Tiny Sparks collection
-  - name: tiny-sparks
-    label: Tiny Sparks
+  # 📚 Someday Stack - Your personal pile of "I'll read this someday" links
+  - name: someday-stack
+    label: 📚 Someday Stack
     type: collection
-    path: content/tiny-sparks
+    path: content/someday-stack
     view:
-      fields: [title, date]
+      fields: [title, date, status]
     fields:
       - name: title
         label: Title
         type: string
         required: true
-      - name: description
-        label: Description
-        type: text
-        hint: Brief description for SEO and previews
-      - name: date
-        label: Date
+        hint: Article/book/content title
+      - name: url
+        label: URL
+        type: string
+        required: true
+        hint: Link to save for later
+      - name: source
+        label: Source
+        type: string
+        hint: Website, author, or where you found it
+      - name: status
+        label: Status
+        type: select
+        options: ["to-read", "reading", "read", "archived"]
+        default: "to-read"
+        required: true
+      - name: priority
+        label: Priority
+        type: select
+        options: ["low", "medium", "high"]
+        default: "medium"
+      - name: estimated_time
+        label: Est. Reading Time
+        type: string
+        hint: "5 min read, 2 hours, etc."
+      - name: date_added
+        label: Date Added
         type: date
         default: now
+      - name: date_read
+        label: Date Read
+        type: date
+        hint: When you actually read it
       - name: tags
         label: Tags
         type: list
         item: string
-        hint: Add relevant tags for categorization
-      - name: draft
-        label: Draft
+        hint: Topics or categories
+      - name: body
+        label: Notes & Summary
+        type: rich-text
+        hint: Why you saved it, key points after reading
+        options:
+          media: default
+          path: static
+          extensions: [jpg, jpeg, png, gif, webp]
+
+  # ✍️ Proper Posts - When you actually try to write something coherent
+  - name: proper-posts
+    label: ✍️ Proper Posts
+    type: collection
+    path: content/proper-posts
+    view: 
+      fields: [title, date, status]
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: subtitle
+        label: Subtitle
+        type: string
+        hint: Optional subtitle or tagline
+      - name: description
+        label: Description
+        type: text
+        required: true
+        hint: What's this essay about? (for SEO and previews)
+      - name: date
+        label: Date
+        type: date
+        default: now
+      - name: status
+        label: Status
+        type: select
+        options: ["draft", "published", "archived"]
+        default: "draft"
+        required: true
+      - name: tags
+        label: Tags
+        type: list
+        item: string
+        hint: Main themes and topics
+      - name: crosspost_substack
+        label: Cross-post to Substack
         type: boolean
         default: false
-        hint: Set to true to hide from publication
+        hint: Will you share this on your newsletter?
       - name: body
-        label: Content
+        label: Essay Content
         type: rich-text
         required: true
         options:

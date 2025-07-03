@@ -2,23 +2,24 @@
 title: Welcome
 ---
 
-Hi, my name is **Bhuvan**—welcome to my garden of tentative thoughts. This little corner of the internet is where I
-share interesting links, jot quick notes, and think out loud about ideas that sometimes grow into longer essays on
-[Substack](https://bhuvan.substack.com).
+Hi, I'm **Bhuvan**—welcome to my digital brain spillage. This chaotic corner of the internet serves as my external memory, where I dump interesting links, half-formed thoughts, stolen wisdom from things I consume, and the occasional attempt at coherent writing.
 
-You'll also find me on [LinkedIn](https://www.linkedin.com/in/bebhuvan/) and
-[Twitter](https://x.com/bebhuvan).
+Think of it as my personal Pocket/Instapaper mixed with a stream-of-consciousness journal. Sometimes these scattered thoughts grow into longer pieces on [Substack](https://bhuvan.substack.com), but mostly they just live here in their natural, unpolished state.
+
+You can also find me overthinking things on [LinkedIn](https://www.linkedin.com/in/bebhuvan/) and [Twitter](https://x.com/bebhuvan).
 
 ---
-## Browse the garden
+## Explore the mess
 
-- 👉 **[Link-Litter](/link-litter/)** – a loose pile of curious URLs
-- ✍️ **[Mini Musings](/mini-musings/)** – short notes & takeaways
-- ✨ **[Tiny Sparks](/tiny-sparks/)** – half-baked ideas looking for light
+- 📎 **[Gaggle of Links](/gaggle-of-links/)** – interesting stuff I stumble upon
+- 💭 **[Brain Dumps](/brain-dumps/)** – stream of consciousness & fleeting observations  
+- 📝 **[Stolen Wisdom](/stolen-wisdom/)** – insights pilfered from books, articles, videos & conversations
+- 📚 **[Someday Stack](/someday-stack/)** – my "I'll read this someday" pile (spoiler: someday rarely comes)
+- ✍️ **[Proper Posts](/proper-posts/)** – when I actually try to write something coherent
 
 ---
 ## Newsletter & RSS
 
-I also send out whatever I write as a newsletter. So, if you’d like to add another newsletter to the list of newsletters you’ve already subscribed to but *aren’t* reading, mine qualifies. Subscribe on [Substack](https://bhuvan.substack.com) and it will land in your inbox.
+I occasionally send out the more coherent bits as a newsletter. If you'd like to add another newsletter to your ever-growing collection of subscriptions you'll never read, mine is perfectly suited for that purpose. Subscribe on [Substack](https://bhuvan.substack.com) and it will join the others gathering digital dust in your inbox.
 
-Prefer an old-school feed reader? Grab the RSS 📡 at **[/index.xml](/index.xml)**.
+Prefer RSS like a proper internet citizen? Grab the feed 📡 at **[/index.xml](/index.xml)**.
