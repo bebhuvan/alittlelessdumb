@@ -1,0 +1,36 @@
+media:
+  input: content/static
+  output: /static
+
+content:
+  - name: posts
+    label: Blog Posts
+    type: collection
+    path: content
+    view: 
+      fields: [title, date]
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: date
+        label: Date
+        type: datetime
+        required: true
+      - name: tags
+        label: Tags
+        type: list
+        item: string
+      - name: draft
+        label: Draft
+        type: boolean
+        default: false
+      - name: body
+        label: Content
+        type: markdown
+        required: true
+
+settings:
+  title: Digital Garden CMS
+  description: Content management for alittlelessdumb.pages.dev
