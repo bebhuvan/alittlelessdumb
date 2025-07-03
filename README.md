@@ -23,7 +23,8 @@ The site organizes content into five themed collections:
 - **📎 Gaggle of Links** - Curated web links and bookmarks
 - **💭 Brain Dumps** - Quick thoughts and random musings  
 - **📚 Stolen Wisdom** - Insights captured from books, articles, videos
-- **🔖 Someday Stack** - Reading list and future learning goals
+- **🕳️ Link Blackhole** - Where bookmarks and good intentions disappear forever
+- **🤖 Bot Brainstorms** - Learning adventures with AI companions
 - **✍️ Proper Posts** - Long-form essays and structured writing
 
 ---

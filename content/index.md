@@ -15,7 +15,8 @@ You can also find me overthinking things on [LinkedIn](https://www.linkedin.com/
 - 📎 **[Gaggle of Links](/gaggle-of-links/)** – interesting stuff I stumble upon
 - 💭 **[Brain Dumps](/brain-dumps/)** – stream of consciousness & fleeting observations  
 - 📝 **[Stolen Wisdom](/stolen-wisdom/)** – insights pilfered from books, articles, videos & conversations
-- 📚 **[Someday Stack](/someday-stack/)** – my "I'll read this someday" pile (spoiler: someday rarely comes)
+- 🕳️ **[Link Blackhole](/link-blackhole/)** – where bookmarks and good intentions disappear forever
+- 🤖 **[Bot Brainstorms](/bot-brainstorms/)** – learning adventures with AI companions
 - ✍️ **[Proper Posts](/proper-posts/)** – when I actually try to write something coherent
 
 ---

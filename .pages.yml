@@ -122,11 +122,11 @@ content:
         type: rich-text
         required: true
 
-  # 📚 Someday Stack - Your personal pile of "I'll read this someday" links
-  - name: someday-stack
-    label: 📚 Someday Stack
+  # 🕳️ Link Blackhole - Where bookmarks and good intentions disappear forever
+  - name: link-blackhole
+    label: 🕳️ Link Blackhole
     type: collection
-    path: content/someday-stack
+    path: content/link-blackhole
     view:
       fields: [title, date, status]
     fields:
@@ -174,6 +174,57 @@ content:
       - name: body
         label: Notes & Summary
         type: rich-text
+
+  # 🤖 Bot Brainstorms - Learning adventures with AI companions
+  - name: bot-brainstorms
+    label: 🤖 Bot Brainstorms
+    type: collection
+    path: content/bot-brainstorms
+    view:
+      fields: [title, date, topic]
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: topic
+        label: Learning Topic
+        type: string
+        required: true
+      - name: ai_partner
+        label: AI Partner
+        type: select
+        options:
+          values: [ "Claude", "ChatGPT", "Perplexity", "Gemini", "Other" ]
+        default: "Claude"
+      - name: date
+        label: Date
+        type: date
+        default: now
+        required: true
+      - name: duration
+        label: Session Duration
+        type: string
+      - name: difficulty
+        label: Difficulty Level
+        type: select
+        options:
+          values: [ "beginner", "intermediate", "advanced" ]
+        default: "intermediate"
+      - name: tags
+        label: Tags
+        type: select
+        options:
+          multiple: true
+          creatable: true
+          values: [ "programming", "science", "philosophy", "history", "math", "creative", "business" ]
+      - name: key_insights
+        label: Key Insights
+        type: text
+      - name: body
+        label: Conversation Transcript
+        type: rich-text
+        required: true
 
   # ✍️ Proper Posts - When you actually try to write something coherent
   - name: proper-posts
