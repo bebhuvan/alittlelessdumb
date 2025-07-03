@@ -17,38 +17,31 @@ content:
         label: Title
         type: string
         required: true
-        hint: What caught your attention?
       - name: url
         label: Link URL
         type: string
-        hint: The link you're saving (optional for non-link posts)
       - name: source
         label: Source
         type: string
-        hint: Where you found this (Twitter, HN, Reddit, etc.)
       - name: date
         label: Date
         type: date
         default: now
       - name: tags
         label: Tags
-        type: list
-        item_type: string
-        hint: Topics, themes, or keywords
+        type: select
+        options:
+          multiple: true
+          creatable: true
+          values: [ "tech", "design", "productivity", "random", "interesting" ]
       - name: archive
         label: Archive this
         type: boolean
         default: false
-        hint: Mark as archived to hide from main feed
       - name: body
         label: Your thoughts
         type: rich-text
         required: true
-        hint: Why is this interesting? What does it make you think?
-        options:
-          media: default
-          path: static
-          extensions: [jpg, jpeg, png, gif, webp]
 
   # 💭 Brain Dumps - Stream of consciousness, fleeting observations
   - name: brain-dumps
@@ -62,41 +55,30 @@ content:
         label: Title
         type: string
         required: true
-        hint: What's on your mind?
       - name: mood
         label: Mood/Context
         type: select
         options:
-          - { label: "Curious", value: "curious" }
-          - { label: "Frustrated", value: "frustrated" }
-          - { label: "Excited", value: "excited" }
-          - { label: "Contemplative", value: "contemplative" }
-          - { label: "Random", value: "random" }
-          - { label: "Nostalgic", value: "nostalgic" }
-        hint: What headspace are you in?
+          values: [ "curious", "frustrated", "excited", "contemplative", "random", "nostalgic" ]
       - name: date
         label: Date
         type: date
         default: now
       - name: tags
         label: Tags
-        type: list
-        item_type: string
-        hint: Themes or topics
+        type: select
+        options:
+          multiple: true
+          creatable: true
+          values: [ "thoughts", "ideas", "personal", "random" ]
       - name: draft
         label: Keep private
         type: boolean
         default: false
-        hint: Sometimes thoughts need to marinate
       - name: body
         label: Stream of consciousness
         type: rich-text
         required: true
-        hint: Let it flow...
-        options:
-          media: default
-          path: static
-          extensions: [jpg, jpeg, png, gif, webp]
 
   # 📝 Stolen Wisdom - Insights pilfered from things you consume
   - name: stolen-wisdom
@@ -110,60 +92,42 @@ content:
         label: Title
         type: string
         required: true
-        hint: What did you learn?
       - name: source_title
         label: Source Title
         type: string
         required: true
-        hint: Book/article/video/podcast title
       - name: source_author
         label: Author/Creator
         type: string
-        hint: Who created this?
       - name: source_type
         label: Content Type
         type: select
         options:
-          - { label: "Book", value: "book" }
-          - { label: "Article", value: "article" }
-          - { label: "Video", value: "video" }
-          - { label: "Podcast", value: "podcast" }
-          - { label: "Documentary", value: "documentary" }
-          - { label: "Course", value: "course" }
-          - { label: "Conversation", value: "conversation" }
+          values: [ "book", "article", "video", "podcast", "documentary", "course", "conversation" ]
         required: true
       - name: source_url
         label: Source Link
         type: string
-        hint: Link to the original content
       - name: date
         label: Date
         type: date
         default: now
       - name: tags
         label: Tags
-        type: list
-        item_type: string
-        hint: Key concepts or themes
+        type: select
+        options:
+          multiple: true
+          creatable: true
+          values: [ "learning", "insights", "wisdom", "books", "articles" ]
       - name: rating
         label: Your Rating
         type: select
         options:
-          - { label: "⭐ (1 star)", value: "⭐" }
-          - { label: "⭐⭐ (2 stars)", value: "⭐⭐" }
-          - { label: "⭐⭐⭐ (3 stars)", value: "⭐⭐⭐" }
-          - { label: "⭐⭐⭐⭐ (4 stars)", value: "⭐⭐⭐⭐" }
-          - { label: "⭐⭐⭐⭐⭐ (5 stars)", value: "⭐⭐⭐⭐⭐" }
-        hint: How much did you enjoy/learn from this?
+          values: [ "⭐", "⭐⭐", "⭐⭐⭐", "⭐⭐⭐⭐", "⭐⭐⭐⭐⭐" ]
       - name: body
         label: Key takeaways & thoughts
         type: rich-text
         required: true
-        hint: What resonated? What will you remember?
-        options:
-          media: default
-          path: static
-          extensions: [jpg, jpeg, png, gif, webp]
 
   # 📚 Someday Stack - Your personal pile of "I'll read this someday" links
   - name: someday-stack
@@ -177,38 +141,29 @@ content:
         label: Title
         type: string
         required: true
-        hint: Article/book/content title
       - name: url
         label: URL
         type: string
         required: true
-        hint: Link to save for later
       - name: source
         label: Source
         type: string
-        hint: Website, author, or where you found it
       - name: status
         label: Status
         type: select
         options:
-          - { label: "To Read", value: "to-read" }
-          - { label: "Currently Reading", value: "reading" }
-          - { label: "Read", value: "read" }
-          - { label: "Archived", value: "archived" }
+          values: [ "to-read", "reading", "read", "archived" ]
         default: "to-read"
         required: true
       - name: priority
         label: Priority
         type: select
         options:
-          - { label: "Low", value: "low" }
-          - { label: "Medium", value: "medium" }
-          - { label: "High", value: "high" }
+          values: [ "low", "medium", "high" ]
         default: "medium"
       - name: estimated_time
         label: Est. Reading Time
         type: string
-        hint: "5 min read, 2 hours, etc."
       - name: date_added
         label: Date Added
         type: date
@@ -216,20 +171,16 @@ content:
       - name: date_read
         label: Date Read
         type: date
-        hint: When you actually read it
       - name: tags
         label: Tags
-        type: list
-        item_type: string
-        hint: Topics or categories
+        type: select
+        options:
+          multiple: true
+          creatable: true
+          values: [ "articles", "books", "learning", "later" ]
       - name: body
         label: Notes & Summary
         type: rich-text
-        hint: Why you saved it, key points after reading
-        options:
-          media: default
-          path: static
-          extensions: [jpg, jpeg, png, gif, webp]
 
   # ✍️ Proper Posts - When you actually try to write something coherent
   - name: proper-posts
@@ -246,12 +197,10 @@ content:
       - name: subtitle
         label: Subtitle
         type: string
-        hint: Optional subtitle or tagline
       - name: description
         label: Description
         type: text
         required: true
-        hint: What's this essay about? (for SEO and previews)
       - name: date
         label: Date
         type: date
@@ -260,29 +209,24 @@ content:
         label: Status
         type: select
         options:
-          - { label: "Draft", value: "draft" }
-          - { label: "Published", value: "published" }
-          - { label: "Archived", value: "archived" }
+          values: [ "draft", "published", "archived" ]
         default: "draft"
         required: true
       - name: tags
         label: Tags
-        type: list
-        item_type: string
-        hint: Main themes and topics
+        type: select
+        options:
+          multiple: true
+          creatable: true
+          values: [ "essay", "thoughts", "personal", "tech", "writing" ]
       - name: crosspost_substack
         label: Cross-post to Substack
         type: boolean
         default: false
-        hint: Will you share this on your newsletter?
       - name: body
         label: Essay Content
         type: rich-text
         required: true
-        options:
-          media: default
-          path: static
-          extensions: [jpg, jpeg, png, gif, webp]
 
   # Single pages
   - name: pages
@@ -304,10 +248,6 @@ content:
             label: Content
             type: rich-text
             required: true
-            options:
-              media: default
-              path: static
-              extensions: [jpg, jpeg, png, gif, webp]
       - name: index
         label: Home Page
         file: index.md
@@ -320,10 +260,6 @@ content:
             label: Content
             type: rich-text
             required: true
-            options:
-              media: default
-              path: static
-              extensions: [jpg, jpeg, png, gif, webp]
 
 # Global settings
 settings:
