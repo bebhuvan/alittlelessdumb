@@ -33,7 +33,7 @@ content:
       - name: tags
         label: Tags
         type: list
-        item: string
+        item_type: string
         hint: Topics, themes, or keywords
       - name: archive
         label: Archive this
@@ -81,7 +81,7 @@ content:
       - name: tags
         label: Tags
         type: list
-        item: string
+        item_type: string
         hint: Themes or topics
       - name: draft
         label: Keep private
@@ -143,7 +143,7 @@ content:
       - name: tags
         label: Tags
         type: list
-        item: string
+        item_type: string
         hint: Key concepts or themes
       - name: rating
         label: Your Rating
@@ -220,7 +220,7 @@ content:
       - name: tags
         label: Tags
         type: list
-        item: string
+        item_type: string
         hint: Topics or categories
       - name: body
         label: Notes & Summary
@@ -268,7 +268,7 @@ content:
       - name: tags
         label: Tags
         type: list
-        item: string
+        item_type: string
         hint: Main themes and topics
       - name: crosspost_substack
         label: Cross-post to Substack
