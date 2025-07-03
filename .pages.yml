@@ -1,12 +1,15 @@
+# Media configuration for file uploads
 media:
   input: content/static
   output: /static
 
+# Content collections
 content:
+  # Main blog posts
   - name: posts
     label: Blog Posts
     type: collection
-    path: content
+    path: content/posts
     view: 
       fields: [title, date]
     fields:
@@ -14,26 +17,34 @@ content:
         label: Title
         type: string
         required: true
+      - name: description
+        label: Description
+        type: text
+        hint: Brief description for SEO and previews
       - name: date
         label: Date
-        type: datetime
-        required: true
+        type: date
+        default: now
       - name: tags
         label: Tags
         type: list
         item: string
+        hint: Add relevant tags for categorization
       - name: draft
         label: Draft
         type: boolean
         default: false
+        hint: Set to true to hide from publication
       - name: body
         label: Content
-        type: markdown
+        type: rich-text
         required: true
         options:
-          editor_components: []
-          modes: [rich_text, raw]
+          media: default
+          path: static
+          extensions: [jpg, jpeg, png, gif, webp]
 
+  # Link Litter collection
   - name: link-litter
     label: Link Litter
     type: collection
@@ -45,26 +56,154 @@ content:
         label: Title
         type: string
         required: true
+      - name: description
+        label: Description
+        type: text
+        hint: Brief description for SEO and previews
       - name: date
         label: Date
-        type: datetime
-        required: true
+        type: date
+        default: now
       - name: tags
         label: Tags
         type: list
         item: string
+        hint: Add relevant tags for categorization
       - name: draft
         label: Draft
         type: boolean
         default: false
+        hint: Set to true to hide from publication
       - name: body
         label: Content
-        type: markdown
+        type: rich-text
         required: true
         options:
-          editor_components: []
-          modes: [rich_text, raw]
+          media: default
+          path: static
+          extensions: [jpg, jpeg, png, gif, webp]
 
+  # Mini Musings collection
+  - name: mini-musings
+    label: Mini Musings
+    type: collection
+    path: content/mini-musings
+    view:
+      fields: [title, date]
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: description
+        label: Description
+        type: text
+        hint: Brief description for SEO and previews
+      - name: date
+        label: Date
+        type: date
+        default: now
+      - name: tags
+        label: Tags
+        type: list
+        item: string
+        hint: Add relevant tags for categorization
+      - name: draft
+        label: Draft
+        type: boolean
+        default: false
+        hint: Set to true to hide from publication
+      - name: body
+        label: Content
+        type: rich-text
+        required: true
+        options:
+          media: default
+          path: static
+          extensions: [jpg, jpeg, png, gif, webp]
+
+  # Tiny Sparks collection
+  - name: tiny-sparks
+    label: Tiny Sparks
+    type: collection
+    path: content/tiny-sparks
+    view:
+      fields: [title, date]
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: description
+        label: Description
+        type: text
+        hint: Brief description for SEO and previews
+      - name: date
+        label: Date
+        type: date
+        default: now
+      - name: tags
+        label: Tags
+        type: list
+        item: string
+        hint: Add relevant tags for categorization
+      - name: draft
+        label: Draft
+        type: boolean
+        default: false
+        hint: Set to true to hide from publication
+      - name: body
+        label: Content
+        type: rich-text
+        required: true
+        options:
+          media: default
+          path: static
+          extensions: [jpg, jpeg, png, gif, webp]
+
+  # Single pages
+  - name: pages
+    label: Pages
+    type: file
+    path: content
+    view:
+      fields: [title]
+    files:
+      - name: about
+        label: About Page
+        file: about.md
+        fields:
+          - name: title
+            label: Title
+            type: string
+            required: true
+          - name: body
+            label: Content
+            type: rich-text
+            required: true
+            options:
+              media: default
+              path: static
+              extensions: [jpg, jpeg, png, gif, webp]
+      - name: index
+        label: Home Page
+        file: index.md
+        fields:
+          - name: title
+            label: Title
+            type: string
+            required: true
+          - name: body
+            label: Content
+            type: rich-text
+            required: true
+            options:
+              media: default
+              path: static
+              extensions: [jpg, jpeg, png, gif, webp]
+
+# Global settings
 settings:
   title: Digital Garden CMS
   description: Content management for alittlelessdumb.pages.dev
+  logo: /static/logo.png
