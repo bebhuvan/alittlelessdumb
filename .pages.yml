@@ -44,7 +44,7 @@ content:
       - name: image
         label: Social Image
         type: file
-        directory: static/social
+        directory: social
         public_path: /static/social
       - name: body
         label: Your thoughts
@@ -89,7 +89,7 @@ content:
       - name: image
         label: Social Image
         type: file
-        directory: static/social
+        directory: social
         public_path: /static/social
       - name: body
         label: Stream of consciousness
@@ -139,7 +139,7 @@ content:
       - name: image
         label: Social Image
         type: file
-        directory: static/social
+        directory: social
         public_path: /static/social
       - name: body
         label: Key takeaways & thoughts
@@ -201,7 +201,7 @@ content:
       - name: image
         label: Social Image
         type: file
-        directory: static/social
+        directory: social
         public_path: /static/social
       - name: body
         label: Notes & Summary
@@ -259,7 +259,7 @@ content:
       - name: image
         label: Social Image
         type: file
-        directory: static/social
+        directory: social
         public_path: /static/social
       - name: body
         label: Conversation Transcript
@@ -310,7 +310,7 @@ content:
       - name: image
         label: Social Image
         type: file
-        directory: static/social
+        directory: social
         public_path: /static/social
       - name: body
         label: Essay Content
