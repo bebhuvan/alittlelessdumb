@@ -1,9 +1,9 @@
 ---
-title: Bot Brainstorms
+title: Machine-Taught
 description: Learning adventures with AI - where curiosity meets silicon
 ---
 
-# 🤖 Bot Brainstorms
+# 🤖 Machine-Taught
 
 *What happens when human curiosity collides with artificial intelligence?*
 

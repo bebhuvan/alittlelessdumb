@@ -176,10 +176,10 @@ content:
         type: rich-text
 
   # 🤖 Bot Brainstorms - Learning adventures with AI companions
-  - name: bot-brainstorms
-    label: 🤖 Bot Brainstorms
+  - name: machine-taught
+    label: 🤖 Machine-Taught
     type: collection
-    path: content/bot-brainstorms
+    path: content/machine-taught
     view:
       fields: [title, date, topic]
     fields:
