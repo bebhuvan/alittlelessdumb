@@ -17,7 +17,7 @@ What is it about music that can conjure all these feelings simultaneously?
 
 I don't want the pop-science version of this explanation. I want to know what the actual research says about why music can rouse our spirits and stir our emotions so powerfully.
 
-![](/static/960px-The_Sounds_of_Earth_-_GPN-2000-001976%20(1).jpg)
+![The grooved side of the Voyager Golden Record launched along the Voyager probes to space, which feature music from around the world](/static/960px-The_Sounds_of_Earth_-_GPN-2000-001976%20(1).jpg)
 
 _The grooved side of the_ [_Voyager Golden Record_](https://en.wikipedia.org/wiki/Voyager_Golden_Record) _launched along the_ [_Voyager probes_](https://en.wikipedia.org/wiki/Voyager_program) _to space, which feature music from around the world_
 
