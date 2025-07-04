@@ -19,7 +19,8 @@ I don't want the pop-science version of this explanation. I want to know what th
 
 ![](/static/960px-The_Sounds_of_Earth_-_GPN-2000-001976%20(1).jpg)
 
-_Grooved side of the_ [_Voyager Golden Record_](https://en.wikipedia.org/wiki/Voyager_Golden_Record) _launched along the_ [_Voyager probes_](https://en.wikipedia.org/wiki/Voyager_program) _to space, which feature music from around the world_  
+_The grooved side of the_ [_Voyager Golden Record_](https://en.wikipedia.org/wiki/Voyager_Golden_Record) _launched along the_ [_Voyager probes_](https://en.wikipedia.org/wiki/Voyager_program) _to space, which feature music from around the world_
+
 **Here's what Claude told me.**
 
 Your instinct to dig deeper than pop science is spot-on. The neuroscience of music and emotion is far more complex and fascinating than the usual "music releases dopamine" explanation, though that's certainly part of it.
