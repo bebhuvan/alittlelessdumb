@@ -38,6 +38,14 @@ content:
         label: Archive this
         type: boolean
         default: false
+      - name: description
+        label: Description
+        type: text
+      - name: image
+        label: Social Image
+        type: file
+        directory: static/social
+        public_path: /static/social
       - name: body
         label: Your thoughts
         type: rich-text
@@ -75,6 +83,14 @@ content:
         label: Keep private
         type: boolean
         default: false
+      - name: description
+        label: Description
+        type: text
+      - name: image
+        label: Social Image
+        type: file
+        directory: static/social
+        public_path: /static/social
       - name: body
         label: Stream of consciousness
         type: rich-text
@@ -117,6 +133,14 @@ content:
         type: select
         options:
           values: [ "⭐", "⭐⭐", "⭐⭐⭐", "⭐⭐⭐⭐", "⭐⭐⭐⭐⭐" ]
+      - name: description
+        label: Description
+        type: text
+      - name: image
+        label: Social Image
+        type: file
+        directory: static/social
+        public_path: /static/social
       - name: body
         label: Key takeaways & thoughts
         type: rich-text
@@ -171,6 +195,14 @@ content:
           multiple: true
           creatable: true
           values: [ "articles", "books", "learning", "later" ]
+      - name: description
+        label: Description
+        type: text
+      - name: image
+        label: Social Image
+        type: file
+        directory: static/social
+        public_path: /static/social
       - name: body
         label: Notes & Summary
         type: rich-text
@@ -221,6 +253,14 @@ content:
       - name: key_insights
         label: Key Insights
         type: text
+      - name: description
+        label: Description
+        type: text
+      - name: image
+        label: Social Image
+        type: file
+        directory: static/social
+        public_path: /static/social
       - name: body
         label: Conversation Transcript
         type: rich-text
@@ -267,6 +307,11 @@ content:
         label: Cross-post to Substack
         type: boolean
         default: false
+      - name: image
+        label: Social Image
+        type: file
+        directory: static/social
+        public_path: /static/social
       - name: body
         label: Essay Content
         type: rich-text
