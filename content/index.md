@@ -19,8 +19,11 @@ You can also find me overthinking things on [LinkedIn](https://www.linkedin.com/
 - 🤖 **[Machine-Taught](/machine-taught/)** – learning adventures with AI companions
 - 💌 **[Letterbox](/letterbox/)** – timeless letters worth reading
 - 🏛️ **[Free Treasures](/free-treasures/)** – gems from the public domain
-- 🗂️ **[All Posts](/all-posts/)** – everything in one continuous feed
 - ✍️ **[Proper Posts](/proper-posts/)** – when I actually try to write something coherent
+
+---
+
+- 🗂️ **[All Posts](/all-posts/)** – everything in one continuous feed
 
 ---
 ## Newsletter & RSS
