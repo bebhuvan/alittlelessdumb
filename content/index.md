@@ -23,7 +23,7 @@ You can also find me overthinking things on [LinkedIn](https://www.linkedin.com/
 
 ---
 
-- 🗂️ **[All Posts](/all-posts/)** – everything in one continuous feed
+- 🗂️ **[All Posts](/content/)** – everything in one continuous feed
 
 ---
 ## Newsletter & RSS
