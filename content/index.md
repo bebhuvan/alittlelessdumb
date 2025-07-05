@@ -21,11 +21,6 @@ You can also find me overthinking things on [LinkedIn](https://www.linkedin.com/
 - 🏛️ **[Free Treasures](/free-treasures/)** – gems from the public domain
 - ✍️ **[Proper Posts](/proper-posts/)** – when I actually try to write something coherent
 
----
-
-- 🗂️ **[All Posts](/all-posts/)** – everything in one continuous feed
-
----
 ## Newsletter & RSS
 
 I occasionally send out the more coherent bits as a newsletter. If you'd like to add another newsletter to your ever-growing collection of subscriptions you'll never read, mine is perfectly suited for that purpose. Subscribe on [Substack](https://bhuvan.substack.com) and it will join the others gathering digital dust in your inbox.
