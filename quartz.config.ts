@@ -85,9 +85,6 @@ const config: QuartzConfig = {
       Plugin.ContentIndex({
         enableSiteMap: true,
         enableRSS: true,
-        title: "🗂️ All Posts",
-        description: "Every note across the garden in reverse-chronological order",
-        path: "/all-posts",
       }),
       Plugin.Assets(),
       Plugin.Static(),
