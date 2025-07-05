@@ -17,6 +17,7 @@ You can also find me overthinking things on [LinkedIn](https://www.linkedin.com/
 - 📝 **[Stolen Wisdom](/stolen-wisdom/)** – insights pilfered from books, articles, videos & conversations
 - 🕳️ **[Link Blackhole](/link-blackhole/)** – where bookmarks and good intentions disappear forever
 - 🤖 **[Machine-Taught](/machine-taught/)** – learning adventures with AI companions
+- 🗂️ **[All Posts](/all-posts/)** – everything in one continuous feed
 - ✍️ **[Proper Posts](/proper-posts/)** – when I actually try to write something coherent
 
 ---
