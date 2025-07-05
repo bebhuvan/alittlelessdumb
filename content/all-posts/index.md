@@ -5,4 +5,5 @@ description: Every note across the garden in reverse-chronological order
 
 # 🗂️ All Posts
 
-<ContentListing folder="." depth={10} />
+
+<Explorer folder=".." depth={10} showFolders={false} />
