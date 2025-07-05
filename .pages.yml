@@ -266,6 +266,93 @@ content:
         type: rich-text
         required: true
 
+  # 💌 Letterbox - Timeless letters worth reading
+  - name: letterbox
+    label: 💌 Letterbox
+    type: collection
+    path: content/letterbox
+    view:
+      fields: [title, date, correspondent]
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: correspondent
+        label: Author(s)
+        type: string
+      - name: date
+        label: Date of Letter
+        type: date
+      - name: source
+        label: Source / Archive
+        type: string
+      - name: tags
+        label: Tags
+        type: select
+        options:
+          multiple: true
+          creatable: true
+          values: [ "love", "history", "politics", "literature" ]
+      - name: description
+        label: Description
+        type: text
+      - name: image
+        label: Social Image
+        type: file
+        directory: social
+        public_path: /static/social
+      - name: body
+        label: Letter Content
+        type: rich-text
+        required: true
+
+  # 🏛️ Free Treasures - Public domain gems
+  - name: free-treasures
+    label: 🏛️ Free Treasures
+    type: collection
+    path: content/free-treasures
+    view:
+      fields: [title, date, type]
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: type
+        label: Item Type
+        type: select
+        options:
+          values: [ "book", "article", "image", "music", "video", "other" ]
+      - name: creator
+        label: Creator / Author
+        type: string
+      - name: date
+        label: Date
+        type: date
+        default: now
+      - name: tags
+        label: Tags
+        type: select
+        options:
+          multiple: true
+          creatable: true
+          values: [ "public-domain", "history", "art", "science" ]
+      - name: url
+        label: Link to Item
+        type: string
+      - name: description
+        label: Description
+        type: text
+      - name: image
+        label: Social Image
+        type: file
+        directory: social
+        public_path: /static/social
+      - name: body
+        label: Notes & Highlights
+        type: rich-text
+
   # ✍️ Proper Posts - When you actually try to write something coherent
   - name: proper-posts
     label: ✍️ Proper Posts
