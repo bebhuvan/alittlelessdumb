@@ -14,14 +14,13 @@ A reader of my newsletter messaged me and asked me this question: How will LLMs 
 
 The following is the answer I gave.
 
-![](/static/Fragonard,_The_Reader-1.jpg)
+![](/static/The%20reader%20(1).png)
 
-A Young Girl Reading by Jean-Honoré Fragonard (c. 1770)  
-Public domain. Source: [Wikipedia](https://en.m.wikipedia.org/wiki/A_Young_Girl_Reading)
+_A Young Girl Reading by Jean-Honoré Fragonard (c. 1770) —_ [_Wikipedia_](https://en.m.wikipedia.org/wiki/A_Young_Girl_Reading)
 
-**Post Type:** Stream of consciousness
+**Post type:** Stream of consciousness
 
-**Epistemic Certainty:** Reasonably sure
+**Epistemic certainty:** Reasonably sure
 
 It’s a tricky question, partly because reading and writing are deeply individualistic pursuits. What they mean for one person may be very different from what they mean for another.  
   
