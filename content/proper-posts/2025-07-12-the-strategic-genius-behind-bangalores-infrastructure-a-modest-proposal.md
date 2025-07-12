@@ -47,7 +47,7 @@ This is 4D chess while most people are playing [kunte bille](https://en.wikipedi
 
 Same applies to air pollution. What these simpleton people with minimal gray matter and smooth brains don't understand is that our bureaucrats and babus are in startup mode. Here's what's really happening: by allowing pollution to go uncontrolled, we are forcing markets to innovate. We are forcing startups to come up with filtration techniques and to innovate medically to strengthen our lungs.
 
-[<img src="https://substackcdn.com/image/fetch/$s_!68tm!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F50bfe6f7-cabf-404d-8bc6-7a3a4d0e66e8_1792x1024.webp" alt="" class="sizing-normal" width="1456" height="832">](https://substackcdn.com/image/fetch/$s_!68tm!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F50bfe6f7-cabf-404d-8bc6-7a3a4d0e66e8_1792x1024.webp)
+![](/static/DALL%C2%B7E%202025-07-12%2013.48.27%20-%20A%20photorealistic,%20ultra-detailed%20wide-screen%20image%20of%20a%20highly%20polluted%20Bangalore%20street.%20Dense%20smog%20covers%20the%20sky,%20filtering%20sunlight%20into%20a%20gray-ye.webp)
 
 There are rumors that BBMP itself is in stealth startup mode, building some of the best state-of-the-art, cutting-edge advanced air filtration systems. These can not only be sold externally, but also be inserted surgically directly into the lungs of Bangaloreans through non-invasive surgery, and these devices can last a lifetime.
 
@@ -105,7 +105,7 @@ We've destroyed all that natural cover. Enemies can't hide anymore. What if the 
 
 And potholes are also a design choice. You think Bangalore has the highest groundwater in India by accident? These were strategically placed to collect rainwater and harvest them. The only reason Bangalore hasn't faced widespread water crisis is because these potholes collect water.
 
-[<img src="https://substackcdn.com/image/fetch/$s_!Z8t3!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F980e72f0-84d6-40fa-9587-462ed7584a38_1792x1024.webp" alt="" class="sizing-normal" width="1456" height="832">](https://substackcdn.com/image/fetch/$s_!Z8t3!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F980e72f0-84d6-40fa-9587-462ed7584a38_1792x1024.webp)
+![](/static/DALL%C2%B7E%202025-07-12%2014.03.43%20-%20A%20photorealistic,%20ultra-detailed%20wide-screen%20image%20of%20a%20badly%20damaged%20urban%20Indian%20road%20during%20monsoon.%20The%20road%20is%20filled%20with%20deep%20potholes%20and%20mudd.webp)
 
 What was the price we paid? Sure, our cars disintegrated quickly, developed symphony orchestras of creaky noises, our spines compressed from constant jarring. Big whoop. Can you truly imagine the profound suffering of not being able to drive comfortably in a BMW while navigating lunar terrain? The humanity!
 
@@ -117,7 +117,7 @@ As Marcus Aurelius would surely agree:
 
 The other thing people complain about is constant water shortages in Bangalore. What most people don't realize is we have plenty of water, thanks to all the potholes we've strategically created, but we know for a fact that in a climate change-damaged and increasingly urbanized world of the future, there will be severe water shortages. We don't have the technology to solve this problem today.
 
-[<img src="https://substackcdn.com/image/fetch/$s_!V-nB!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3294a679-f534-410c-bc9b-6fd6e4c52943_1792x1024.webp" alt="" class="sizing-normal" width="1456" height="832">](https://substackcdn.com/image/fetch/$s_!V-nB!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3294a679-f534-410c-bc9b-6fd6e4c52943_1792x1024.webp)
+![](/static/DALL%C2%B7E%202025-07-12%2013.50.51%20-%20A%20photorealistic,%20ultra-detailed%20wide-screen%20image%20depicting%20a%20water%20crisis%20in%20Bangalore.%20A%20dry,%20cracked%20public%20water%20tank%20sits%20in%20the%20center%20of%20a%20den.webp)
 
 So what we're doing is making a sacrifice by subjecting our bodies to limited water consumption, forcing Darwinism to speed up its evolutionary process. We're creating a new kind of being that can not only survive, but thrive with limited water content—like the noble camels of the desert, but urban and sophisticated.
 
@@ -147,7 +147,7 @@ There's a famous Silicon Valley saying: "Move fast and break things." You think 
 
 Our footpaths are crowded, non-existent, full of obstacles. This is not by accident. We've turned footpaths into Temple Run crossed with an obstacle course designed by neuroscientist urban planners studying pain thresholds. You're walking, suddenly we've removed slabs covering the footpath, teaching you vigilance. We have also introduced other obstacles: standee boards, mountains of construction debris, open manholes, sudden drops into sewage.
 
-[<img src="https://substackcdn.com/image/fetch/$s_!gyIO!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc39967cb-eee8-4fa3-9113-567d62d05a57_1792x1024.webp" alt="" class="sizing-normal" width="1456" height="832">](https://substackcdn.com/image/fetch/$s_!gyIO!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc39967cb-eee8-4fa3-9113-567d62d05a57_1792x1024.webp)
+![](/static/DALL%C2%B7E%202025-07-12%2013.53.03%20-%20A%20photorealistic,%20ultra-detailed%20wide-screen%20image%20of%20a%20chaotic%20Bangalore%20footpath%20designed%20like%20an%20urban%20obstacle%20course.%20Broken%20tiles,%20open%20manholes.webp)
 
 Why? We want to keep your mental faculties razor-sharp, your reflexes lightning-fast, your paranoia healthy and productive. We're playing the long game, increasing brain activity through constant mortal peril so people have less risk of Alzheimer's and more risk of traumatic brain injury.
 
@@ -165,7 +165,7 @@ We are not only forcing automobile manufacturers to build robust vehicles, but t
 
 People complain Bangaloreans lack civic sense. They drive on footpaths, mow down pedestrians, honk at red lights AND green lights, throw garbage into neighbors' living rooms, park in bustling traffic to smoke cigarettes while blocking ambulances, offer bribes to escape consequences for everything from jumping signals to vehicular manslaughter.
 
-[<img src="https://substackcdn.com/image/fetch/$s_!9wE0!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7b975129-3a63-4a24-b01c-1cf9e1a8789c_1792x1024.webp" alt="" class="sizing-normal" width="1456" height="832">](https://substackcdn.com/image/fetch/$s_!9wE0!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7b975129-3a63-4a24-b01c-1cf9e1a8789c_1792x1024.webp)
+![](/static/DALL%C2%B7E%202025-07-12%2013.55.47%20-%20A%20photorealistic,%20ultra-detailed%20wide-screen%20image%20of%20a%20chaotic%20Bangalore%20traffic%20scene%20with%20civic%20neglect.%20A%20white%20ambulance%20with%20flashing%20lights%20is%20.webp)
 
 You think we enjoy destroying our souls this way? We engage in these morally reprehensible acts to help people appreciate what they have. Only by destroying and defiling everything sacred and valuable do we teach people the true worth of civilization. By desecrating all that's holy, we teach an entire generation what it means to protect a city from barbarians like ourselves.
 
@@ -179,7 +179,7 @@ As the Mahatma himself understood:
 
 People complain about traffic, but they don't see the bright side. We're enabling contemplation at traffic signals—thinking about life, love, dreams, death, the meaninglessness of existence. We're creating spaces for involuntary creative daydreaming so inner creative energies are unlocked through rage and desperation. We're promoting a culture of mindfulness by allowing people to meditate on their life choices at traffic signals for hours while their mental health deteriorates.
 
-[<img src="https://substackcdn.com/image/fetch/$s_!dxVg!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F785c4e16-26ed-4d7f-8330-46b642e72d01_1792x1024.webp" alt="" class="sizing-normal" width="1456" height="832">](https://substackcdn.com/image/fetch/$s_!dxVg!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F785c4e16-26ed-4d7f-8330-46b642e72d01_1792x1024.webp)
+![](/static/DALL%C2%B7E%202025-07-12%2013.56.52%20-%20A%20photorealistic,%20ultra-detailed%20wide-screen%20image%20of%20a%20surreal%20Bangalore%20traffic%20jam%20interpreted%20as%20forced%20meditation.%20Rows%20of%20vehicles%20are%20stuck%20mot.webp)
 
 As Epictetus wisely noted:
 
