@@ -12,6 +12,7 @@ You can also find me overthinking things on [LinkedIn](https://www.linkedin.com/
 ---
 ## Explore the mess
 
+🎲 [Surprise me with a random post!](/random)
 
 - 📎 **[Gaggle of Links](/gaggle-of-links/)** – interesting stuff I stumble upon
 - 💭 **[Brain Dumps](/brain-dumps/)** – stream of consciousness & fleeting observations  
