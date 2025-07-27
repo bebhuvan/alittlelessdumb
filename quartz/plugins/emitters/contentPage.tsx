@@ -7,7 +7,7 @@ import { pageResources, renderPage } from "../../components/renderPage"
 import { FullPageLayout } from "../../cfg"
 import { pathToRoot } from "../../util/path"
 import { defaultContentPageLayout, sharedPageComponents } from "../../../quartz.layout"
-import { Content } from "../../components"
+import { Content, AllPostsContent } from "../../components"
 import { styleText } from "util"
 import { write } from "./helpers"
 import { BuildCtx } from "../../util/ctx"
@@ -26,6 +26,11 @@ async function processContent(
   const slug = fileData.slug!
   const cfg = ctx.cfg.configuration
   const externalResources = pageResources(pathToRoot(slug), resources)
+  
+  // Use AllPostsContent component for all-posts page
+  const pageBody = slug === "all-posts" ? AllPostsContent() : opts.pageBody
+  const modifiedOpts = { ...opts, pageBody }
+  
   const componentData: QuartzComponentProps = {
     ctx,
     fileData,
@@ -36,7 +41,7 @@ async function processContent(
     allFiles,
   }
 
-  const content = renderPage(cfg, slug, componentData, opts, externalResources)
+  const content = renderPage(cfg, slug, componentData, modifiedOpts, externalResources)
   return write({
     ctx,
     content,

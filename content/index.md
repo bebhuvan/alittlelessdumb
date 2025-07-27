@@ -20,6 +20,7 @@ You can also find me overthinking things on [LinkedIn](https://www.linkedin.com/
 - 💌 **[Letterbox](/letterbox/)** – timeless letters worth reading
 - 🏛️ **[Free Treasures](/free-treasures/)** – gems from the public domain
 - ✍️ **[Proper Posts](/proper-posts/)** – when I actually try to write something coherent
+- 📚 **[All Posts](/all-posts)** – everything in one chronological feed
 
 ## Newsletter & RSS
 
