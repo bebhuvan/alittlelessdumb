@@ -12,6 +12,7 @@ You can also find me overthinking things on [LinkedIn](https://www.linkedin.com/
 ---
 ## Explore the mess
 
+
 - 📎 **[Gaggle of Links](/gaggle-of-links/)** – interesting stuff I stumble upon
 - 💭 **[Brain Dumps](/brain-dumps/)** – stream of consciousness & fleeting observations  
 - 📝 **[Stolen Wisdom](/stolen-wisdom/)** – insights pilfered from books, articles, videos & conversations

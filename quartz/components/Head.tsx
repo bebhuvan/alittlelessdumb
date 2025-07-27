@@ -5,6 +5,8 @@ import { googleFontHref, googleFontSubsetHref } from "../util/theme"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { unescapeHTML } from "../util/escape"
 import { CustomOgImagesEmitterName } from "../plugins/emitters/ogImage"
+// @ts-ignore
+import pwaScript from "./scripts/pwa.inline"
 export default (() => {
   const Head: QuartzComponent = ({
     cfg,
@@ -85,6 +87,14 @@ export default (() => {
         <link rel="icon" href={iconPath} />
         <meta name="description" content={description} />
         <meta name="generator" content="Quartz" />
+        
+        {/* PWA Manifest */}
+        <link rel="manifest" href={joinSegments(baseDir, "static/manifest.json")} />
+        <meta name="theme-color" content="#FF7A00" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta name="apple-mobile-web-app-title" content="A Little Less Dumb" />
+        <link rel="apple-touch-icon" href={iconPath} />
 
         {css.map((resource) => CSSResourceToStyleElement(resource, true))}
         {js
@@ -101,5 +111,6 @@ export default (() => {
     )
   }
 
+  Head.afterDOMLoaded = pwaScript
   return Head
 }) satisfies QuartzComponentConstructor

@@ -1,0 +1,34 @@
+{
+  "name": "A Little Less Dumb",
+  "short_name": "A Little Less Dumb",
+  "description": "Digital brain spillage & tentative thoughts - Bhuvan's personal knowledge garden",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#FF7A00",
+  "orientation": "portrait-primary",
+  "categories": ["productivity", "education", "lifestyle"],
+  "lang": "en-US",
+  "icons": [
+    {
+      "src": "/static/icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon.ico",
+      "sizes": "32x32",
+      "type": "image/x-icon"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/static/og-image.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "A Little Less Dumb homepage"
+    }
+  ]
+}
