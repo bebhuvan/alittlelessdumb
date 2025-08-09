@@ -20,6 +20,8 @@ image: /static/1132px-Caspar_David_Friedrich_-_Der_Mönch_am_Meer_-_Google_Art_P
 
 _This is a speculative essay about something I've been feeling for a long time. It's intentionally messy and rambly because I don't have a crystal clear articulation of what follows—what follows is rather the first draft. I'm using this essay to stake out a thinking space to continue exploring this topic in more depth later. Thank you for your attention to this matter._
 
+[_This essay was republished here._](https://open.substack.com/pub/bhuvan/p/the-death-of-silence?r=1eft5&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
+
 * * *
 
 ![](/static/1132px-Caspar_David_Friedrich_-_Der_M%C3%B6nch_am_Meer_-_Google_Art_Project.jpg)
